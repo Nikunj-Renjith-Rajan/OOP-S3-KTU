@@ -19,7 +19,7 @@ class Evennum extends Thread{
 }
 class Oddnum extends Thread{
     public void run(){
-        try {
+        try{
             FileInputStream fin=new FileInputStream("num.txt");
             FileOutputStream fout2=new FileOutputStream("odd.txt");
             int num=fin.read();
