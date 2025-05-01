@@ -1,37 +1,28 @@
 //THREAD SYNCHRONIZATION-Nikunj Renjith Rajan,Roll No:16
-class display
-{
-    public synchronized void print(int num)
-    {
+class display{
+    public synchronized void print(int num){
         System.out.print(" "+num);
-        try
-        {
+        try{
             Thread.sleep(500);
         }
-        catch(Exception e)
-        {
+        catch(Exception e){
             System.out.println(e.getMessage());
         }
     }
 }
-class ThreadSync extends Thread
-{
+class ThreadSync extends Thread{
     private display d;
     private int num;
-    public ThreadSync(display d,int num)
-    {
+    public ThreadSync(display d,int num){
         this.d=d;
         this.num=num;
     }
-    public void run()
-    {
+    public void run(){
         d.print(num);
     }
 }
-class Main
-{
-    public static void main(String[] args)
-    {
+class Main{
+    public static void main(String[] args){
         int i;
         display d=new display();
         for(i=1;i<=5;i++){
