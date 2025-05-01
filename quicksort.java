@@ -1,4 +1,3 @@
-//QUICKSORT-Nikunj Renjith Rajan,Roll No:16
 import java.util.*;
 public class QuickSortNames {
     public static void main(String[] args) {
